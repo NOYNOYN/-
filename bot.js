@@ -32,7 +32,6 @@ client.on('message', message => {
   const embed = new Discord.RichEmbed()
   .setThumbnail("https://e.top4top.net/p_10236vx1j1.png")
   .setTitle('My server')
-  .addField('Trees Server',
   .setURL('https://discord.gg/Wn9cs5')
   .setTimestamp()
   .setColor('#000000')
