@@ -27,11 +27,12 @@ client.user.setGame(`Type As`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+
 client.on('message', message => {
-  if(message.content === 's') {
+  if(message.content === 'As') {
   const embed = new Discord.RichEmbed()
-  .setThumbnail("https://e.top4top.net/p_10236vx1j1.png")
-  .setTitle('My server')
+ .setThumbnail("https://e.top4top.net/p_10236vx1j1.png")
+  .setTitle('Myserver')
   .setURL('https://discord.gg/Wn9cs5')
   .setTimestamp()
   .setColor('#000000')
@@ -39,6 +40,7 @@ client.on('message', message => {
   message.channel.send({embed: embed});
   }
 });
+
 
 
 // THIS  MUST  BE  THIS  WAY
