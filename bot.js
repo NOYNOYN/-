@@ -41,6 +41,24 @@ client.on('message', message => {
   }
 });
 
+client.on("guildMemberAdd", member => {
+    timer = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000
+  let words = [` 
+  **
+  اك السلام عليكم اخوي هذا سيرفر جديد خورافي فيه فعاليت وبوتات اسطوريه
+  ادخل وشوف كل ما كبر السيرفر كل ما صارت في فعاليت كثير
+  الفعاليه القادمه
+  Cape
+  FUL ACC
+  
+  LINK : https://discord.gg/vdxxu7y `]
+  setTimeout(() =>{
+  member.createDM().then(function (channel) {
+  return channel.send(`${words[Math.floor(Math.random() * words.length)]}`) 
+}).catch(console.error)
+}, timer)
+})
+
 
 
 // THIS  MUST  BE  THIS  WAY
