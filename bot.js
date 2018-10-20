@@ -1254,6 +1254,11 @@ setInterval(function(){})
 }
 });
 
+client.on("guildMemberAdd", m => {
+let role = m.guild.roles.find(r => r.name === "fn")
+m.addRole(role);
+})
+
 
 
 // THIS  MUST  BE  THIS  WAY
