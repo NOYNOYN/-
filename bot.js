@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "A";
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Type As in my dm`,"http://twitch.tv/S-F")
+client.user.setGame(`Color Box`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -28,18 +28,6 @@ client.user.setGame(`Type As in my dm`,"http://twitch.tv/S-F")
 });
 
 
-client.on('message', message => {
-  if(message.content === 'As') {
-  const embed = new Discord.RichEmbed()
- .setThumbnail("https://e.top4top.net/p_10236vx1j1.png")
-  .setTitle('My server')
-  .setURL('https://discord.gg/Wn9cs5')
-  .setTimestamp()
-  .setColor('#000000')
-  .setColor('#36393e')
-  message.channel.send({embed: embed});
-  }
-});
 
 client.on('message', message => {
 const prefix = '+'	
