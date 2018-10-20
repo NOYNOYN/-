@@ -1213,14 +1213,14 @@ const prefix = '+'
 	
 	client.on('message', msg => {
     if (msg.content === 'الوان') {
-      if (msg.channel.id !== "486607133966729217") return;
+      if (msg.channel.id !== "499670442920116262") return;
       msg.channel.send({file : "https://c.top4top.net/p_1012e05dk1.png"})
     }
   });
 client.on('message', message => {
     let args = message.content.split(' ').slice(1);
 if(message.content.split(' ')[0] == 'لون'){
-if (message.channel.id !== "486607133966729217") return;
+if (message.channel.id !== "499670442920116262") return;
      const embedd = new Discord.RichEmbed()
 .setFooter('Requested by '+message.author.username, message.author.avatarURL)
 .setDescription(`**There's No Color With This Number ** ❌ `)
