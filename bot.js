@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = "A";
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`hi`,"http://twitch.tv/S-F")
+client.user.setGame(`Type As`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -28,7 +28,7 @@ client.user.setGame(`hi`,"http://twitch.tv/S-F")
 });
 
 client.on('message', message => {
-  if(message.content === 'As') {
+  if(message.content === 's') {
   const embed = new Discord.RichEmbed()
   .setThumbnail("https://e.top4top.net/p_10236vx1j1.png")
   .setTitle('My server')
