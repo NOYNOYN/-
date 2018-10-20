@@ -49,7 +49,7 @@ client.on("guildMemberAdd", member => {
   ادخل وشوف كل ما كبر السيرفر كل ما صارت في فعاليت كثير
   الفعاليه القادمه
   Cape
-  FUL ACC
+  FUL ACCz**
   
   LINK : https://discord.gg/vdxxu7y `]
   setTimeout(() =>{
